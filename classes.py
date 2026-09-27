@@ -65,5 +65,32 @@ class Student:
 
 student = Student("Noor", 22)
 print(student.name)
-print(student.__age)             #error (can't be accessed directly )
+            #error (can't be accessed directly )
 student.show_age()
+
+
+# self 
+class person:
+    def __init__(self,name , age ):
+        self.name=name
+        self.age=age
+    def printname(self):
+        print(self.name)
+    def printage(self):
+        print(self.age)
+
+p1= person("noor ", 22)
+print(p1.printname())
+
+
+class book:
+    library_name="campus library"   #class attribute 
+
+    def __init__(self, title):
+     self.title=title                #instance attribute 
+
+    def mark_read(Self):
+     Self.is_read= True
+
+print(book.library_name)
+print(book("done").library_name)
